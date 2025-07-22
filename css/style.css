@@ -420,7 +420,8 @@ a:hover {
     margin-top: 10px
 }
 .img-fluid {
-    width: 90px;
+       max-width: 290px;
+    height: auto;
 }
 .dropdown .dropdown-menu {
     display: block;
