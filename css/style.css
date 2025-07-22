@@ -218,9 +218,9 @@ button:focus {
 }
 
 .btn-main {
-    background: #926f0a;
+    background: #0d1a46;
     color: #fff;
-    border-color: #926f0a
+    border-color: #0d1a46
 }
 
 .btn-main-2 {
@@ -330,7 +330,7 @@ button:focus {
 
 .overlay:before {
     opacity: .9;
-    background: #926f0a
+    background: #0d1a46
 }
 
 .overly-2:before {
@@ -384,7 +384,7 @@ a:hover {
 .service i,
 .title-color,
 .widget h4 {
-    color: #926f0a
+    color: #0d1a46
 }
 
 .section-title {
@@ -509,7 +509,7 @@ a:hover {
     line-height: 1.2;
     letter-spacing: -1.2px;
     text-transform: capitalize;
-    color: #926f0a
+    color: #0d1a46
 }
 
 .feature-item h4,
@@ -525,7 +525,7 @@ a:hover {
 .divider {
     width: 40px;
     height: 5px;
-    background: #926f0a
+    background: #0d1a46
 }
 
 .about-img img {
@@ -606,7 +606,7 @@ a:hover {
 
 .feature-item .feature-icon i {
     font-size: 50px;
-    color: #926f0a
+    color: #0d1a46
 }
 
 .feature-section.border-top {
@@ -981,7 +981,7 @@ a:hover {
     font-size: 50px;
     margin-bottom: 15px;
     display: inline-block;
-    color: #926f0a
+    color: #0d1a46
 }
 
 .blog-item-content h2 {
@@ -1314,7 +1314,7 @@ a:hover {
 .footer-socials li a {
     width: 45px;
     height: 45px;
-    background: #926f0a;
+    background: #0d1a46;
     color: #fff;
     display: inline-block;
     text-align: center;
@@ -1342,7 +1342,7 @@ a:hover {
 
 .backtop {
     position: fixed;
-    background: #926f0a;
+    background: #0d1a46;
     z-index: 9999;
     display: inline-block;
     right: 55px;
