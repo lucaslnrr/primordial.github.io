@@ -509,7 +509,7 @@ a:hover {
     line-height: 1.2;
     letter-spacing: -1.2px;
     text-transform: capitalize;
-    color: #0d1a46
+    color: #ffffff
 }
 
 .feature-item h4,
@@ -525,7 +525,7 @@ a:hover {
 .divider {
     width: 40px;
     height: 5px;
-    background: #0d1a46
+    background: #03b59f
 }
 
 .about-img img {
@@ -835,7 +835,8 @@ a:hover {
 
     .banner .block h1 {
         font-size: 38px;
-        line-height: 50px
+        line-height: 50px;
+        color: #01bfae
     }
 
     .banner {
@@ -867,7 +868,8 @@ a:hover {
 
     .banner .block h1 {
         font-size: 28px;
-        line-height: 40px
+        line-height: 40px;
+        color: #01bfae
     }
 
     .banner {
@@ -895,7 +897,8 @@ a:hover {
 @media (max-width:768px) {
     .banner .block h1 {
         font-size: 56px;
-        line-height: 70px
+        line-height: 70px;
+        color: #01bfae
     }
 
     .banner {
