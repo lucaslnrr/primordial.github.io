@@ -419,7 +419,9 @@ a:hover {
 .navbar-brand {
     margin-top: 10px
 }
-
+.img-fluid {
+    width: 90px;
+}
 .dropdown .dropdown-menu {
     display: block;
     background: #fff;
