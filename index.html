@@ -1,511 +1,505 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Primordial Gestão de Riscos</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp" />
+    <title>Primordial Gestão de Riscos</title>
 
-        <!-- bootstrap.min css -->
-        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-        />
-        <!-- Slick Slider  CSS -->
-        <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.min.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp" />
 
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.min.css" />
 
-    <body>
-        <!-- Nav Start -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light navigation" id="navbar">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="Imagem" class="img-fluid" />
-                    </a>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
-                    <button
-                        class="navbar-toggler collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarmain"
-                        aria-controls="navbarmain"
-                        aria-expanded="false"
-                        aria-label="Alternar navegação"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarmain">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Serviços</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Nav End -->
-
-        <!-- Slider Start -->
-        <section class="banner">
+<body>
+    <!-- Nav Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navigation" id="navbar">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-xl-7">
-                        <div class="block">
-                            <div class="divider mb-3"></div>
-                            <span class="text-uppercase text-sm letter-spacing">
-                                Solução completa em saúde
-                            </span>
-                            <h1 class="mb-3 mt-3">Seu parceiro de saúde mais confiável</h1>
-                            <p class="mb-4 pr-5">
-                                A dor é a voz do seu corpo; ouça e livre-se dela antes que afete
-                                sua saúde mental. Viva sem dor.
-                            </p>
-                            <div class="btn-container">
-                                <a
-                                    href="contact.html"
-                                    target="_blank"
-                                    class="btn btn-main-2 btn-icon btn-round-full"
-                                >
-                                    Agendar consulta <i class="bi bi-chevron-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Imagem" class="img-fluid" />
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+    </header>
+    <!-- Nav End -->
 
-        <!-- Feature Card Start -->
-        <section class="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="feature-block d-lg-flex">
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <div class="feature-icon mb-4">
-                                    <i class="bi bi-hospital"></i>
-                                </div>
-                                <span>Atendimento 24 horas</span>
-                                <h4 class="mb-3">Agendamento Online</h4>
-                                <p class="mb-4">
-                                    Obtenha suporte a qualquer hora e agende sua consulta de qualquer lugar.
-                                </p>
-                                <a href="contact.html" class="btn btn-main btn-round-full">
-                                    Agendar consulta
-                                </a>
-                            </div>
-
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <div class="feature-icon mb-4">
-                                    <i class="bi bi-clock"></i>
-                                </div>
-                                <span>Horário de funcionamento</span>
-                                <h4 class="mb-3">Horários</h4>
-                                <ul class="w-hours list-unstyled">
-                                    <li class="d-flex justify-content-between">
-                                        Seg - Sáb : <span>11:00 - 17:00</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        Dom : <span>Fechado</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="feature-item mb-5 mb-lg-0">
-                                <div class="feature-icon mb-4">
-                                    <i class="bi bi-headset"></i>
-                                </div>
-                                <span>Casos de Emergência</span>
-                                <h4 class="mb-3">85112-00197</h4>
-                                <p>
-                                    Em casos de emergência, nos avise para atendimento imediato e informe antes da chegada do paciente.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Feature Card End -->
-
-        <!-- About Start -->
-        <section class="section about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="about-img">
-                            <img src="images/about/img-1.webp" alt="Imagem" class="img-fluid" />
-                            <img src="images/about/img-2.webp" alt="Imagem" class="img-fluid mt-4" />
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="about-img mt-4 mt-lg-0">
-                            <img src="images/about/img-3.webp" alt="Imagem" class="img-fluid" />
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="about-content pl-4 mt-4 mt-lg-0">
-                            <h2 class="title-color">Cuidados pessoais <br />& vida saudável</h2>
-                            <p class="mt-4 mb-5">
-                                Somos uma das clínicas mais avançadas no atendimento médico,
-                                oferecendo as melhores soluções para todos os seus problemas de saúde.
-                            </p>
-
-                            <a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">
-                                Serviços <i class="bi bi-chevron-right ml-3"></i>
+    <!-- Slider Start -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xl-7">
+                    <div class="block">
+                        <div class="divider mb-3"></div>
+                        <span class="text-uppercase text-sm letter-spacing">
+                            Solução completa em Segurança do Trabalho
+                        </span>
+                        <h1 class="mb-3 mt-3">Estamos aqui
+                            para te ajudar!</h1>
+                        <p class="mb-4 pr-5">
+                            Valorizamos o que há de mais importante em qualquer
+                            equipe: seus colaboradores. Nossa missão é ajudar a
+                            gerenciar riscos ocupacionais, prevenir multas e
+                            aumentar a produtividade, elementos essenciais para
+                            garantir o sucesso de qualquer empresa.
+                        </p>
+                        <div class="btn-container">
+                            <a href="contact.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">
+                                Agendar consulta <i class="bi bi-chevron-right ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- About End -->
+        </div>
+    </section>
 
-        <!-- Estatísticas Início -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta position-relative">
+    <!-- Feature Card Start -->
+    <section class="features">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-stat">
-                        <i class="bi bi-people"></i>
-                        <span class="h3">200</span>+
-                        <p>Pessoas Satisfeitas</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-stat">
-                        <i class="bi bi-flag"></i>
-                        <span class="h3">50</span>+
-                        <p>Cirurgias Realizadas</p>
-                    </div>
-                </div>
+                <div class="col-lg-12">
+                    <div class="feature-block d-lg-flex">
+                        <div class="feature-item mb-5 mb-lg-0">
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-hospital"></i>
+                            </div>
+                            <span>Atendimento 24 horas</span>
+                            <h4 class="mb-3">Agendamento Online</h4>
+                            <p class="mb-4">
+                                Obtenha suporte a qualquer hora e agende sua consulta de qualquer lugar.
+                            </p>
+                            <a href="contact.html" class="btn btn-main btn-round-full">
+                                Agendar consulta
+                            </a>
+                        </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-stat">
-                        <i class="bi bi-award"></i>
-                        <span class="h3">10</span>+
-                        <p>Médicos Especialistas</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-stat">
-                        <i class="bi bi-globe"></i>
-                        <span class="h3">5</span>
-                        <p>Unidades ao Redor do Mundo</p>
+                        <div class="feature-item mb-5 mb-lg-0">
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <span>Horário de funcionamento</span>
+                            <h4 class="mb-3">Horários</h4>
+                            <ul class="w-hours list-unstyled">
+                                <li class="d-flex justify-content-between">
+                                    Seg - Sáb : <span>11:00 - 17:00</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    Dom : <span>Fechado</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-item mb-5 mb-lg-0">
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <span>Casos de Emergência</span>
+                            <h4 class="mb-3">85112-00197</h4>
+                            <p>
+                                Em casos de emergência, nos avise para atendimento imediato e informe antes da chegada
+                                do paciente.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Estatísticas Fim -->
+    </section>
+    <!-- Feature Card End -->
 
-<!-- Serviços Início -->
-<section class="section service gray-bg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 text-center">
-                <div class="section-title">
-                    <h2>Atendimento premiado aos pacientes</h2>
-                    <div class="divider mx-auto my-4"></div>
-                    <p>
-                        Na Anamay Pain Clinic, valorizamos o bem-estar e a satisfação dos nossos pacientes acima de tudo. 
-                        Acreditamos em avaliar três vezes antes de diagnosticar e prescrever uma única vez.
-                    </p>
+    <!-- About Start -->
+    <section class="section about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="about-img">
+                        <img src="images/about/img-1.webp" alt="Imagem" class="img-fluid" />
+                        <img src="images/about/img-2.webp" alt="Imagem" class="img-fluid mt-4" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="about-img mt-4 mt-lg-0">
+                        <img src="images/about/img-3.webp" alt="Imagem" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about-content pl-4 mt-4 mt-lg-0">
+                        <h2 class="title-color">Cuidados pessoais <br />& vida saudável</h2>
+                        <p class="mt-4 mb-5">
+                            Somos uma das clínicas mais avançadas no atendimento médico,
+                            oferecendo as melhores soluções para todos os seus problemas de saúde.
+                        </p>
+
+                        <a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">
+                            Serviços <i class="bi bi-chevron-right ml-3"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- About End -->
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="service-item mb-4">
-                    <div class="icon d-flex align-items-center">
-                        <h4 class="mt-3 mb-3">Dor Quimioterápica</h4>
+    <!-- Estatísticas Início -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta position-relative">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="bi bi-people"></i>
+                            <span class="h3">200</span>+
+                            <p>Pessoas Satisfeitas</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="bi bi-flag"></i>
+                            <span class="h3">50</span>+
+                            <p>Cirurgias Realizadas</p>
+                        </div>
                     </div>
 
-                    <div class="content">
-                        <p class="mb-4">
-                            Frequentemente descrita como uma sensação de queimação, dormência, formigamento ou pontadas. 
-                            Geralmente ocorre nas mãos e nos pés.
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="bi bi-award"></i>
+                            <span class="h3">10</span>+
+                            <p>Médicos Especialistas</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter-stat">
+                            <i class="bi bi-globe"></i>
+                            <span class="h3">5</span>
+                            <p>Unidades ao Redor do Mundo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Estatísticas Fim -->
+
+    <!-- Serviços Início -->
+    <section class="section service gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title">
+                        <h2>Atendimento premiado aos pacientes</h2>
+                        <div class="divider mx-auto my-4"></div>
+                        <p>
+                            Na Anamay Pain Clinic, valorizamos o bem-estar e a satisfação dos nossos pacientes acima de
+                            tudo.
+                            Acreditamos em avaliar três vezes antes de diagnosticar e prescrever uma única vez.
                         </p>
                     </div>
                 </div>
             </div>
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-    <div class="service-item mb-4">
-        <div class="icon d-flex align-items-center">
-            <h4 class="mt-3 mb-3">Dor na Coluna</h4>
-        </div>
-        <div class="content">
-            <p class="mb-4">
-                Tratamento da coluna, disco intervertebral, corpo vertebral e dores neurálgicas.
-            </p>
-        </div>
-    </div>
-</div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Dor Quimioterápica</h4>
+                        </div>
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-    <div class="service-item mb-4">
-        <div class="icon d-flex align-items-center">
-            <h4 class="mt-3 mb-3">Dores Corporais</h4>
-        </div>
-        <div class="content">
-            <p class="mb-4">
-                Incluindo dores no ombro, peito, pescoço, cervical, joelho, tornozelo e abdômen.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="col-lg-4 col-md-6 col-sm-6">
-    <div class="service-item mb-4">
-        <div class="icon d-flex align-items-center">
-            <h4 class="mt-3 mb-3">Cirurgia Corporal</h4>
-        </div>
+                        <div class="content">
+                            <p class="mb-4">
+                                Frequentemente descrita como uma sensação de queimação, dormência, formigamento ou
+                                pontadas.
+                                Geralmente ocorre nas mãos e nos pés.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="content">
-            <p class="mb-4">
-                Procedimentos cirúrgicos para diversas áreas do corpo com foco em segurança e recuperação eficaz.
-            </p>
-        </div>
-    </div>
-</div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Dor na Coluna</h4>
+                        </div>
+                        <div class="content">
+                            <p class="mb-4">
+                                Tratamento da coluna, disco intervertebral, corpo vertebral e dores neurálgicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-    <div class="service-item mb-4">
-        <div class="icon d-flex align-items-center">
-            <h4 class="mt-3 mb-3">Cirurgia Neurológica</h4>
-        </div>
-        <div class="content">
-            <p class="mb-4">
-                Tratamentos especializados para condições neurológicas com técnicas avançadas de cirurgia.
-            </p>
-        </div>
-    </div>
-</div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Dores Corporais</h4>
+                        </div>
+                        <div class="content">
+                            <p class="mb-4">
+                                Incluindo dores no ombro, peito, pescoço, cervical, joelho, tornozelo e abdômen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Cirurgia Corporal</h4>
+                        </div>
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-    <div class="service-item mb-4">
-        <div class="icon d-flex align-items-center">
-            <h4 class="mt-3 mb-3">Ginecologia</h4>
-        </div>
-        <div class="content">
-            <p class="mb-4">
-                Atendimento ginecológico completo com foco na saúde e bem-estar da mulher.
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-            </div>
-        </section>
-        <!-- Services End -->
+                        <div class="content">
+                            <p class="mb-4">
+                                Procedimentos cirúrgicos para diversas áreas do corpo com foco em segurança e
+                                recuperação eficaz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Testimonial Start -->
-        
-        <!-- Partners Start -->
-         <section class="section clients">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title text-center">
-                            <h2>Clientes parceiros</h2>
-                            <div class="divider mx-auto my-4"></div>
-                            <p>
-                                Lets know moreel necessitatibus dolor asperiores illum possimus sint
-                                voluptates incidunt molestias nostrum laudantium. Maiores porro
-                                cumque quaerat.
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Cirurgia Neurológica</h4>
+                        </div>
+                        <div class="content">
+                            <p class="mb-4">
+                                Tratamentos especializados para condições neurológicas com técnicas avançadas de
+                                cirurgia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="service-item mb-4">
+                        <div class="icon d-flex align-items-center">
+                            <h4 class="mt-3 mb-3">Ginecologia</h4>
+                        </div>
+                        <div class="content">
+                            <p class="mb-4">
+                                Atendimento ginecológico completo com foco na saúde e bem-estar da mulher.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Services End -->
 
-            <div class="container">
-                <div class="row clients-logo">
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/1.png" alt="Image" class="img-fluid" />
-                        </div>
+    <!-- Testimonial Start -->
+
+    <!-- Partners Start -->
+    <section class="section clients">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>Clientes parceiros</h2>
+                        <div class="divider mx-auto my-4"></div>
+                        <p>
+                            Lets know moreel necessitatibus dolor asperiores illum possimus sint
+                            voluptates incidunt molestias nostrum laudantium. Maiores porro
+                            cumque quaerat.
+                        </p>
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/2.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row clients-logo">
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/1.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/3.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/2.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/4.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/3.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/5.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/4.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/6.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/5.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/3.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/6.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/4.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/3.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/5.png" alt="Image" class="img-fluid" />
-                        </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/4.png" alt="Image" class="img-fluid" />
                     </div>
-                    <div class="col-lg-2">
-                        <div class="client-thumb">
-                            <img src="images/about/6.png" alt="Image" class="img-fluid" />
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/5.png" alt="Image" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="client-thumb">
+                        <img src="images/about/6.png" alt="Image" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners End -->
+
+    <!-- Footer Start -->
+    <!-- Footer Start -->
+    <footer class="footer section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mr-5 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="logo mb-4">
+                            <img src="images/logo.png" alt="Image" class="img-fluid" />
+                        </div>
+                        <p class="text-justify">
+                            Nossa metodologia é fundamentada em uma abordagem integrada e personalizada para cada
+                            cliente, garantindo a eficácia e a qualidade dos nossos serviços.
+                        </p>
+
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/Anamay-Pain-Clinic-101178958834959/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/anamaypainclinic/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCvFkoY4QRwCsJLRupL6FDqw">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget widget-contact mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Entre em contato</h4>
+                        <div class="divider mb-4"></div>
+
+                        <div class="footer-contact-block mb-4">
+                            <div class="icon d-flex align-items-center">
+                                <i class="bi bi-envelope mr-3"></i>
+                                <span class="h6 mb-0">Suporte</span>
+                            </div>
+                            <h4 class="mt-2">
+                                <a href="mailto:pgr@sierefire.com">
+                                    pgr@sierefire.com
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="footer-contact-block">
+                            <div class="icon d-flex align-items-center">
+                                <i class="bi bi-headset mr-3"></i>
+                                <span class="h6 mb-0">Segunda a Sábado : 07:00 - 17:00</span>
+                            </div>
+                            <h4 class="mt-2">
+                                <a href="tel:+918511200197">27 9.9856-3697</a>
+                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Partners End -->
 
-        <!-- Footer Start -->
-  <!-- Footer Start -->
-        <footer class="footer section gray-bg">
-            <div class="container">
+            <div class="footer-btm py-4 mt-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-12 text-center">
+                        <div class="copyright">
+                            &copy; Copyright Reserved to
+                            <span class="text-color">siereFire - Soluções em Tecnologia</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-4 mr-5 col-sm-6">
-                        <div class="widget mb-5 mb-lg-0">
-                            <div class="logo mb-4">
-                                <img src="images/logo.png" alt="Image" class="img-fluid" />
-                            </div>
-                            <p class="text-justify">
-                                Nossa metodologia é fundamentada em uma abordagem integrada e personalizada para cada cliente, garantindo a eficácia e a qualidade dos nossos serviços.
-                            </p>
-
-                            <ul class="list-inline footer-socials mt-4">
-                                <li class="list-inline-item">
-                                    <a
-                                        href="https://www.facebook.com/Anamay-Pain-Clinic-101178958834959/"
-                                    >
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.instagram.com/anamaypainclinic/">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a
-                                        href="https://www.youtube.com/channel/UCvFkoY4QRwCsJLRupL6FDqw"
-                                    >
-                                        <i class="bi bi-youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="widget widget-contact mb-5 mb-lg-0">
-                            <h4 class="text-capitalize mb-3">Entre em contato</h4>
-                            <div class="divider mb-4"></div>
-
-                            <div class="footer-contact-block mb-4">
-                                <div class="icon d-flex align-items-center">
-                                    <i class="bi bi-envelope mr-3"></i>
-                                    <span class="h6 mb-0">Suporte</span>
-                                </div>
-                                <h4 class="mt-2">
-                                    <a href="mailto:pgr@sierefire.com">
-                                        pgr@sierefire.com
-                                    </a>
-                                </h4>
-                            </div>
-
-                            <div class="footer-contact-block">
-                                <div class="icon d-flex align-items-center">
-                                    <i class="bi bi-headset mr-3"></i>
-                                    <span class="h6 mb-0">Segunda a Sábado : 07:00 - 17:00</span>
-                                </div>
-                                <h4 class="mt-2">
-                                    <a href="tel:+918511200197">27 9.9856-3697</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-btm py-4 mt-5">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-lg-12 text-center">
-                            <div class="copyright">
-                                &copy; Copyright Reserved to
-                                <span class="text-color">siereFire - Soluções em Tecnologia</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <button class="backtop js-scroll-trigger border-0">
-                                <i class="bi bi-arrow-up"></i>
-                            </button>
-                        </div>
+                    <div class="col-lg-4">
+                        <button class="backtop js-scroll-trigger border-0">
+                            <i class="bi bi-arrow-up"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- Footer End -->
-    </body>
-    <!-- Essential Scripts -->
+    <!-- Footer End -->
+</body>
+<!-- Essential Scripts -->
 
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.js"></script>
-    <script src="plugins/jquery/jquery.validate.min.js"></script>
+<!-- Main jQuery -->
+<script src="plugins/jquery/jquery.js"></script>
+<script src="plugins/jquery/jquery.validate.min.js"></script>
 
-    <!-- Bootstrap 4.3.2 -->
-    <script src="plugins/bootstrap/js/popper.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap 4.3.2 -->
+<script src="plugins/bootstrap/js/popper.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Slick Slider -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
 
-    <!-- Counterup -->
-    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+<!-- Counterup -->
+<script src="plugins/counterup/jquery.waypoints.min.js"></script>
+<script src="plugins/counterup/jquery.counterup.min.js"></script>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+
 </html>
