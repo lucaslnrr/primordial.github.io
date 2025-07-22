@@ -224,9 +224,9 @@ button:focus {
 }
 
 .btn-main-2 {
-    background: #fcd76e;
+    background: #0d1a46;
     color: #fff;
-    border-color: #fcd76e
+    border-color: #0d1a46
 }
 
 .btn-solid-border {
@@ -744,7 +744,7 @@ a:hover {
 .cta:before {
     position: absolute;
     width: 100%;
-    background: rgba(146, 112, 10, .95)
+    background: #35a28b
 }
 
 .mb-30 {
