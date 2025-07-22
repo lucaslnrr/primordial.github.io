@@ -208,7 +208,7 @@ button:focus {
 
 .btn-main-2:hover,
 .btn-main:hover {
-    border-color: #e12454;
+    border-color: #182e76;
     color: #fff;
     background: #e12454
 }
@@ -220,13 +220,13 @@ button:focus {
 .btn-main {
     background: #0d1a46;
     color: #fff;
-    border-color: #0d1a46
+    border-color: #03b4a0
 }
 
 .btn-main-2 {
     background: #0d1a46;
     color: #fff;
-    border-color: #0d1a46
+    border-color: #03b4a0
 }
 
 .btn-solid-border {
