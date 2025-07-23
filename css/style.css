@@ -422,7 +422,7 @@ a:hover {
 .img-fluid {
        max-width: 290px;
     height: auto;
-    background: #01bfae;
+    background: #212b34;
 }
 .dropdown .dropdown-menu {
     display: block;
@@ -530,7 +530,7 @@ a:hover {
 }
 
 .about-img img {
-    border-radius: 5px
+    border-radius: 20px
 }
 
 .award-img {
