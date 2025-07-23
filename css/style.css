@@ -422,6 +422,7 @@ a:hover {
 .img-fluid {
        max-width: 290px;
     height: auto;
+    background: #01bfae;
 }
 .dropdown .dropdown-menu {
     display: block;
