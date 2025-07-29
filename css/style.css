@@ -841,8 +841,7 @@ a:hover {
 
     .banner { background: url("../images/about/about-4.png") no-repeat;
     background-size: cover;
-        min-height: 450px;
-        
+    
     }
 
     .doctors .btn-group {
@@ -863,40 +862,62 @@ a:hover {
 }
 
 @media (max-width:400px) {
-    .text-lg {
-        font-size: 28px
-    }
+  .text-lg {
+    font-size: 28px;
+  }
 
-    .banner .block h1 {
-        font-size: 28px;
-        line-height: 40px;
-        color: #01bfae
-    }
+  .banner {
+    min-height: 450px !important;
+    display: block !important;
+    width: 100% !important;
+    background-image: url("../images/about/about-4.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    position: relative !important;
+    z-index: 1;
+  }
 
-    .banner {
-        min-height: 450px;
-     background: url("../images/about/about-4.png") no-repeat;
+  .banner::before {
+    content: "";
+    display: block;
+    height: 450px;
+    width: 100%;
+    background-image: url("../images/about/about-4.png");
     background-size: cover;
-     background-position: center;
-    background-repeat: no-repeat
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
-    .doctors .btn-group {
-        display: block
-    }
+  .banner .block h1 {
+    font-size: 28px !important;
+    line-height: 40px !important;
+    color: #01bfae !important;
+    position: relative;
+    z-index: 2;
+  }
 
-    .doctors .btn-group .btn {
-        margin: 8px 3px
-    }
+  .doctors .btn-group {
+    display: block;
+  }
 
-    .testimonial-wrap {
-        margin-left: 0
-    }
+  .doctors .btn-group .btn {
+    margin: 8px 3px;
+  }
 
-    .testimonial::before {
-        display: none
-    }
+  .testimonial-wrap {
+    margin-left: 0;
+  }
+
+  .testimonial::before {
+    display: none;
+  }
 }
+
 
 @media (max-width:768px) {
     .banner .block h1 {
