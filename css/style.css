@@ -866,17 +866,14 @@ a:hover {
     font-size: 28px;
   }
 
-  .banner {
-    min-height: 450px !important;
-    display: block !important;
-    width: 100% !important;
-    background-image: url("../images/about/about-4.png") !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    position: relative !important;
-    z-index: 1;
-  }
+.banner {
+  background: url("../images/about/about-4.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 200px;  /* força espaço antes do texto */
+  padding-bottom: 200px; /* força espaço depois do texto */
+  text-align: center;
+}
+
 
   .banner::before {
     content: "";
