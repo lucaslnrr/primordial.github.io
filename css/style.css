@@ -867,36 +867,36 @@ a:hover {
   }
 
 .banner {
-  background: url("../images/about/about-4.png") no-repeat center center;
+  position: relative;
+  background: url("../images/about/about-4.png") center center no-repeat;
   background-size: cover;
-  padding-top: 200px;  /* força espaço antes do texto */
-  padding-bottom: 200px; /* força espaço depois do texto */
-  text-align: center;
+  min-height: 450px;
+  color: #fff;
 }
 
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 
-  .banner::before {
-    content: "";
-    display: block;
-    height: 450px;
-    width: 100%;
-    background-image: url("../images/about/about-4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+.banner .block {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
 
-  .banner .block h1 {
-    font-size: 28px !important;
-    line-height: 40px !important;
-    color: #01bfae !important;
-    position: relative;
-    z-index: 2;
-  }
+.banner .block h1 {
+  font-size: 28px;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
 
   .doctors .btn-group {
     display: block;
