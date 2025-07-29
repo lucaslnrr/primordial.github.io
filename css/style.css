@@ -839,9 +839,10 @@ a:hover {
         color: #01bfae
     }
 
-    .banner {
+    .banner { background: url("../images/about/about-4.png") no-repeat;
+    background-size: cover;
         min-height: 450px;
-        background: #fff !important
+        
     }
 
     .doctors .btn-group {
@@ -874,7 +875,8 @@ a:hover {
 
     .banner {
         min-height: 450px;
-        background: #fff !important
+     background: url("../images/about/about-4.png") no-repeat;
+    background-size: cover
     }
 
     .doctors .btn-group {
@@ -902,7 +904,9 @@ a:hover {
     }
 
     .banner {
-        background: #fff !important
+        background: #fff !important;
+        background: url("../images/about/about-4.png") no-repeat;
+    background-size: cover
     }
 
     .doctors .btn-group {
