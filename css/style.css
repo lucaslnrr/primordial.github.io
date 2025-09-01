@@ -27,8 +27,19 @@ a:hover {
 .testimonial {
     position: relative
 }
+.client-thumb {
+  display: flex;
+  align-items: center;   /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  height: 100px; /* altura fixa para alinhar todos os logos */
+}
 
-.client-thumb,
+.client-thumb img {
+  max-height: 80px;  /* limita altura do logo */
+  object-fit: contain; /* garante que a proporção seja mantida */
+}
+
+
 .counter-stat {
     text-align: center
 }
@@ -84,10 +95,13 @@ h4,
 p {
     line-height: 30px
 }
-
+.navbar{
+    background: #010f29
+}
 #navbarmain .nav-link,
 .btn {
     font-family: Exo, sans-serif
+   
 }
 
 .h1,
@@ -104,7 +118,7 @@ h5,
 h6 {
     font-family: Exo, sans-serif;
     font-weight: 700;
-    color: #222
+    color: #e5eeff;
 }
 
 .h1,
@@ -199,6 +213,12 @@ button:focus {
 .subtitle,
 .text-sm {
     font-size: 14px
+}
+.feature-item .btn {
+  min-width: 200px;       /* define largura mínima */
+  width: 200px;           /* força todos iguais */
+  text-align: center;     /* centraliza o texto */
+  align-self: center; /* mantém alinhado à esquerda */
 }
 
 .btn.btn-icon i {
@@ -406,7 +426,7 @@ a:hover {
 #navbarmain .nav-link {
     font-weight: 600;
     padding: 10px 15px;
-    color: #222;
+    color: #e1e4e8;
     text-transform: capitalize;
     font-size: 16px;
     transition: .25s
@@ -420,7 +440,7 @@ a:hover {
     margin-top: 10px
 }
 .img-fluid {
-       max-width: 290px;
+       max-width: 310px;
     height: auto
 }
 .dropdown .dropdown-menu {
@@ -493,24 +513,64 @@ a:hover {
     background: url("../images/bg/22.jpg") 50% 50%/cover no-repeat
 }
 
+/* Banner wrapper */
 .banner {
-    background: url("../images/bg/slider-bg-1.webp") no-repeat;
-    background-size: cover;
-    min-height: 550px
+  padding: 0;
 }
 
-.banner .block {
-    padding: 80px 0 160px;
-  
+/* Carousel container */
+.banner-slider {
+  position: relative;
 }
 
-.banner .block h1 {
-    font-size: 60px;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
-    text-transform: capitalize;
-    color: #ffffff
+.banner-slider .slide{
+  position:relative;
+  min-height:550px;
+  display:flex; align-items:center;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
+
+
+/* Dark overlay for contrast */
+.banner-slider .slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+}
+
+/* Slide text */
+.banner-slider .slide .slide-content {
+  position: relative; /* above overlay */
+  color: #fff;
+  padding: 20% 40px; /* reused from your .block */
+  background: rgba(0,0,0,0.5); /* black overlay */
+  display: inline-block; /* shrink-wrap around text */
+}
+
+
+.banner-slider .slide h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.banner-slider .slide .kicker {
+  display: inline-block;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .9rem;
+  opacity: .9;
+}
+
+/* Dots styling */
+.banner .slick-dots { bottom: 15px; }
+.banner .slick-dots li button:before { color: #fff; opacity: .6; }
+.banner .slick-dots li.slick-active button:before { opacity: 1; }
 
 .feature-item h4,
 .logo h3,
@@ -521,6 +581,13 @@ a:hover {
 .text-color-primary {
     color: #223a66
 }
+.slide.video-slide { position: relative; overflow: hidden; }
+.slide.video-slide::before { background: rgba(0,0,0,.25); } /* overlay mais leve no vídeo */
+.slide.video-slide .slide-content { position: relative; z-index: 1; }
+.slide.video-slide video.bg-video{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;
+}
+
 
 .divider {
     width: 40px;
@@ -650,7 +717,8 @@ a:hover {
 
 .cta-section,
 .mb--80 {
-    margin-bottom: -80px
+    margin-bottom: -80px;
+    padding: 100px 0
 }
 
 .service {
@@ -1386,4 +1454,25 @@ a:hover {
 
 .error {
     color: red
+}
+.ef-1 {
+    width: 30%;
+    height: 10px;
+    background: #088868;
+    float: left;
+    position: absolute;
+    top: 0;
+   
+    z-index: 5;
+}
+.ef-2 {
+    width: 30%;
+    height: 10px;
+    background: #088868;
+    float: right;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
 }
