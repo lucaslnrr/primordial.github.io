@@ -70,78 +70,155 @@
             </div>
         </section>
 
-        <section class="section service-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5">
-                            <img src="images/service/service-1.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">Serviços em Medicina Ocupacional</h4>
-                                <p class="mb-4">Acuidade visual; Audiometria; Avaliação clínica; ECG (eletrocardiograma); EEG (eletroencefalograma); Espirometria; Exames laboratoriais; Avaliação psicossocial; Raio X diagnóstico por imagem; Atendimento 'in loco'</p>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section service-2" id="servicos">
+  <style>
+    /* ===== Scoped styles (only affect #servicos) ===== */
+    #servicos{
+      background:#f8fbff;
+      padding:56px 0 64px;
+    }
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5">
-                            <img src="images/service/service-2.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">Resgate e Emergência</h4>
-                                <p class="mb-4">Locação de ambulância; Equipe de socorristas; Medicina ocupacional; Consultoria médica</p>
-                            </div>
-                        </div>
-                    </div>
+    /* Grid spacing */
+    #servicos .row > [class*="col-"]{ margin-bottom:24px; }
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5">
-                            <img src="images/service/service-3.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">
-                                    Treinamento de Segurança
-                                </h4>
-                                <p class="mb-4">NR 01; NR 06; NR 10; NR 12; NR 18; NR 20; NR 33; NR 34; NR 35.</p>
-                            </div>
-                        </div>
-                    </div>
+    /* Card */
+    #servicos .service-block{
+      background:#fff;
+      border:1px solid #e8eef6;
+      border-radius:14px;
+      padding:18px 18px 16px;
+      box-shadow:0 10px 24px rgba(18,28,63,.06);
+      height:100%;
+      transition: box-shadow .18s ease, transform .12s ease, border-color .18s ease;
+    }
+    #servicos .service-block:hover{
+      transform: translateY(-3px);
+      box-shadow:0 16px 36px rgba(18,28,63,.10);
+      border-color:#dce6f3;
+    }
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5 mb-lg-0">
-                            <img src="images/service/service-4.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">Programas e Laudos Técnicos
-                                </h4>
-                                <p class="mb-4">PGR; PCMSO; LTCAT; LI; LP</p>
-                            </div>
-                        </div>
-                    </div>
+    /* Image area – unified look, no stretching */
+    #servicos .service-block > img{
+      display:block;
+      width:100%;
+      max-width:300px;         /* consistent visual weight */
+     /* height:90px;              fixed stage for all icons */
+      object-fit:contain;      /* keep original proportions */
+      margin:6px auto 4px;     /* centered */
+    }
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5 mb-lg-0">
-                            <img src="images/service/service-6.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">
-                                    Inspeções Técnicas
-                                </h4>
-                                <p class="mb-4">Análise de risco e perícia técnica</p>
-                            </div>
-                        </div>
-                    </div>
+    /* Text */
+    #servicos .title-color{
+      color:#1b2b49;
+      font-weight:700;
+      font-size:1.02rem;
+      margin-top:10px !important;
+      margin-bottom:6px !important;
+      line-height:1.25;
+    }
+    #servicos .service-block p{
+      color:#5b6b86;
+      font-size:.95rem;
+      line-height:1.55;
+      margin-bottom:0 !important;
+    }
 
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="service-block mb-5 mb-lg-0">
-                            <img src="images/service/service-8.png" alt="Image" class="img-fluid" />
-                            <div class="content">
-                                <h4 class="mt-4 mb-2 title-color">Consultoria em Segurança do Trabalho</h4>
-                                <p class="mb-4">Elaboração de procedimentos, visitas técnicas; Auditorias e Compliance</p>
-                            </div>
-                        </div>
-                    </div>
+    /* Tiny accent underline on hover (clean, subtle) */
+    #servicos .title-color{
+      position:relative;
+      padding-bottom:4px;
+    }
+    #servicos .service-block:hover .title-color:after{
+      content:"";
+      position:absolute; left:0; bottom:0;
+      width:42px; height:3px; border-radius:3px;
+      background:#00b996;
+    }
 
-                    
-                </div>
-            </div>
-        </section>
+    /* Small screens: a touch more breathing room */
+    @media (max-width: 575.98px){
+      #servicos .service-block{
+        padding:16px;
+      }
+      #servicos .service-block > img{
+        height:80px;
+        max-width:120px;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="row">
+      <!-- 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-1.png" alt="Serviços em Medicina Ocupacional" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Serviços em Medicina Ocupacional</h4>
+            <p>Acuidade visual; Audiometria; Avaliação clínica; ECG; EEG; Espirometria; Exames laboratoriais; Avaliação psicossocial; Raio X; Atendimento “in loco”.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-2.png" alt="Resgate e Emergência" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Resgate e Emergência</h4>
+            <p>Locação de ambulância; Equipe de socorristas; Medicina ocupacional; Consultoria médica.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-3.png" alt="Treinamento de Segurança" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Treinamento de Segurança</h4>
+            <p>NR 01, 06, 10, 12, 18, 20, 33, 34 e 35.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-4.png" alt="Programas e Laudos Técnicos" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Programas e Laudos Técnicos</h4>
+            <p>PGR; PCMSO; LTCAT; LI; LP.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-6.png" alt="Inspeções Técnicas" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Inspeções Técnicas</h4>
+            <p>Análise de risco e perícia técnica.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="service-block">
+          <img src="images/service/service-8.png" alt="Consultoria em Segurança do Trabalho" class="img-fluid" />
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">Consultoria em Segurança do Trabalho</h4>
+            <p>Elaboração de procedimentos, visitas técnicas, auditorias e compliance.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         <!-- Footer Start -->
       <footer class="footer section" style="background:#121d3e; color:#fff; padding:50px 0 20px 0; font-size:14px;">
