@@ -130,51 +130,73 @@
     </div>
 
     <!-- Cards -->
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="about-block-item h-100">
-          <img src="images/about/about-1.jpg" alt="Imagem" class="img-fluid w-100" />
-          <h4 class="mt-3">Gestão de Riscos</h4>
-          <p class="text-justify">
-            Implementamos medidas preventivas que reduzem acidentes de trabalho e 
-            garantem a integridade física e emocional dos colaboradores.
-          </p>
-        </div>
-      </div>
+    <div class="row"> 
+  <style>
+    /* Force uniform image height inside about cards */
+    .about-block-item img {
+      width: 100%;
+      height: 220px;     /* 👈 set desired fixed height */
+      object-fit: cover; /* crop without stretching */
+      border-radius: 8px; /* optional, smooth corners */
+    }
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="about-block-item h-100">
-          <img src="images/about/about-2.jpg" alt="Imagem" class="img-fluid w-100" />
-          <h4 class="mt-3">Medicina Ocupacional</h4>
-          <p class="text-justify">
-            Realizamos exames admissionais, periódicos, de retorno ao trabalho e demissionais, 
-            sempre com foco no bem-estar e na conformidade legal.
-          </p>
-        </div>
-      </div>
+    .about-block-item h4 {
+      font-weight: 700;
+      color: #1b2b49;
+    }
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="about-block-item h-100">
-          <img src="images/about/about-3.jpg" alt="Imagem" class="img-fluid w-100" />
-          <h4 class="mt-3">Tecnologia e Precisão</h4>
-          <p class="text-justify">
-            Utilizamos equipamentos modernos e metodologias atualizadas para oferecer diagnósticos 
-            rápidos e confiáveis.
-          </p>
-        </div>
-      </div>
+    .about-block-item p {
+      font-size: 0.95rem;
+      color: #5b6b86;
+      line-height: 1.5;
+    }
+  </style>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="about-block-item h-100">
-          <img src="images/about/about-4.png" alt="Imagem" class="img-fluid w-100" />
-          <h4 class="mt-3">Equipe Especializada</h4>
-          <p class="text-justify">
-            Nossa equipe é formada por profissionais qualificados e comprometidos em oferecer
-            soluções completas em saúde e segurança ocupacional.
-          </p>
-        </div>
-      </div>
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="about-block-item h-100">
+      <img src="images/about/about-1.jpg" alt="Imagem" class="img-fluid w-100" />
+      <h4 class="mt-3">Gestão de Riscos</h4>
+      <p class="text-justify">
+        Implementamos medidas preventivas que reduzem acidentes de trabalho e 
+        garantem a integridade física e emocional dos colaboradores.
+      </p>
     </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="about-block-item h-100">
+      <img src="images/about/about-2.jpg" alt="Imagem" class="img-fluid w-100" />
+      <h4 class="mt-3">Medicina Ocupacional</h4>
+      <p class="text-justify">
+        Realizamos exames admissionais, periódicos, de retorno ao trabalho e demissionais, 
+        sempre com foco no bem-estar e na conformidade legal.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="about-block-item h-100">
+      <img src="images/about/about-3.jpg" alt="Imagem" class="img-fluid w-100" />
+      <h4 class="mt-3">Tecnologia e Precisão</h4>
+      <p class="text-justify">
+        Utilizamos equipamentos modernos e metodologias atualizadas para oferecer diagnósticos 
+        rápidos e confiáveis.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="about-block-item h-100">
+      <img src="images/about/about-4.png" alt="Imagem" class="img-fluid w-100" />
+      <h4 class="mt-3">Equipe Especializada</h4>
+      <p class="text-justify">
+        Nossa equipe é formada por profissionais qualificados e comprometidos em oferecer
+        soluções completas em saúde e segurança ocupacional.
+      </p>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
