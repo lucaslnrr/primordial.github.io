@@ -4614,7 +4614,7 @@ input[type=submit].btn-block {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: transparent;
+    background-color: #fffffffa;
     border: 1px solid transparent;
     border-radius: .25rem
 }
