@@ -939,7 +939,7 @@ a:hover {
     left: 0;
     height: 450px;
     width: 100%;
-    background: url("../images/about/about-4.png") no-repeat center center;
+
     background-size: cover;
     z-index: 0;
   }
@@ -978,7 +978,7 @@ a:hover {
 
     .banner {
         background: #fff !important;
-        background: url("../images/about/about-4.png") no-repeat;
+        
     background-size: cover
     
     }
