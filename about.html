@@ -243,39 +243,60 @@
 
     <!-- Cards -->
     <div class="row">
-      <!-- Ivany Bernardes -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="team-block h-100 text-center p-3">
-          <img src="images/team/ivany.png" alt="Ivany Bernardes" class="img-fluid w-100 rounded" />
-          <div class="content">
-            <h4 class="mt-4 mb-1">Ivany Bernardes</h4>
-            <p class="mb-0">Diretora Administrativo e Financeiro</p>
-          </div>
-        </div>
-      </div>
+  <style>
+    /* Scoped style: same width/height for team images */
+    .team-block img {
+      width: 100%;
+      height: 280px;         /* 👈 adjust as you like (250–300px works well) */
+      object-fit: cover;     /* crop to fill without distortion */
+      border-radius: 10px;   /* keeps your rounded style */
+    }
 
-      <!-- Ramon Alves -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="team-block h-100 text-center p-3">
-          <img src="images/team/ramon.png" alt="Ramon Alves" class="img-fluid w-100 rounded" />
-          <div class="content">
-            <h4 class="mt-4 mb-1">Ramon Alves</h4>
-            <p class="mb-0">Diretor Comercial</p>
-          </div>
-        </div>
-      </div>
+    .team-block .content h4 {
+      font-weight: 700;
+      color: #1b2b49;
+    }
 
-      <!-- Carlos Valiente -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="team-block h-100 text-center p-3">
-          <img src="images/team/carlos.png" alt="Carlos Valiente" class="img-fluid w-100 rounded" />
-          <div class="content">
-            <h4 class="mt-4 mb-1">Carlos Valiente</h4>
-            <p class="mb-0">Diretor Clínico</p>
-          </div>
-        </div>
+    .team-block .content p {
+      font-size: 0.95rem;
+      color: #5b6b86;
+    }
+  </style>
+
+  <!-- Ivany Bernardes -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <div class="team-block h-100 text-center p-3">
+      <img src="images/team/ivany.png" alt="Ivany Bernardes" class="img-fluid w-100 rounded" />
+      <div class="content">
+        <h4 class="mt-4 mb-1">Ivany Bernardes</h4>
+        <p class="mb-0">Diretora Administrativo e Financeiro</p>
       </div>
     </div>
+  </div>
+
+  <!-- Ramon Alves -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <div class="team-block h-100 text-center p-3">
+      <img src="images/team/ramon.png" alt="Ramon Alves" class="img-fluid w-100 rounded" />
+      <div class="content">
+        <h4 class="mt-4 mb-1">Ramon Alves</h4>
+        <p class="mb-0">Diretor Comercial</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carlos Valiente -->
+  <div class="col-lg-4 col-md-6 mb-4">
+    <div class="team-block h-100 text-center p-3">
+      <img src="images/team/carlos.png" alt="Carlos Valiente" class="img-fluid w-100 rounded" />
+      <div class="content">
+        <h4 class="mt-4 mb-1">Carlos Valiente</h4>
+        <p class="mb-0">Diretor Clínico</p>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 <!-- Team End 
