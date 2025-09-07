@@ -440,6 +440,10 @@ a:hover {
     margin-top: 10px
 }
 .img-fluid {
+       max-width: 310px;
+    height: auto
+}
+.img-fluid {
        max-width: 100%;
     height: auto
 }
