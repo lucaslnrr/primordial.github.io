@@ -28,9 +28,9 @@
       autoplay: true,
       slidesToShow: 6,
       slidesToScroll: 1,
-      speed: 3000,       // higher = slower movement
-      autoplaySpeed: 0,  // immediate, continuous
-      cssEase: "linear", // smooth continuous scroll
+      speed: 3000,
+      autoplaySpeed: 0,
+      cssEase: "linear",
       pauseOnHover: false,
       responsive: [
         { breakpoint: 1024, settings: { slidesToShow: 6 } },
@@ -86,8 +86,8 @@
   $(".js-scroll-trigger").on("click", function () { window.scrollTo(0, 0); });
 
   // ===== Contact form =====
-  // Add a phone validator that allows +, spaces, (), and dashes
-  if (hasPlugin($.validator)) {
+  // Validator: check $.fn.validate (plugin function), not $.validator (object)
+  if ($.fn && typeof $.fn.validate === "function") {
     $.validator.addMethod("phoneLoose", function (value, element) {
       if (!value) return true; // optional
       return /^\+?\d[\d\s()\-]{5,}$/.test(value);
@@ -112,46 +112,54 @@
     });
   }
 
-  // Submit via AJAX (prevent double submit)
-  $("#contact-form").on("submit", function (event) {
-    event.preventDefault();
+  // Preenche o timestamp de criação do formulário (time-trap)
+  $(function () {
+    var tsInput = document.querySelector('#contact-form input[name="form_ts"]');
+    if (tsInput) tsInput.value = Math.floor(Date.now() / 1000);
+  });
+
+  // AJAX submit com proteção anti duplo-clique
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault();
     var $form = $(this);
 
-    if (!hasPlugin($.validator) || $form.valid()) {
-      var formEl = $form.get(0);
-      var fd = new FormData(formEl);
+    if (typeof $form.valid === 'function' && !$form.valid()) return;
 
-      // Append phone into message (as you had)
-      var phone = fd.get("phone");
-      if (phone) {
-        var msg = fd.get("email_message") || "";
-        msg += " The phone number is " + phone + ".";
-        fd.set("email_message", msg);
-      }
+    var fd = new FormData(this);
 
-      var $btn = $("#contact-form-submit");
-      $btn.prop("disabled", true);
-
-      $.ajax({
-        url: "https://mailtest.tesfire.com/api/mail",
-        type: "POST",
-        data: fd,
-        processData: false,
-        contentType: false,
-        success: function (response) {
-          alert((response && response.message) || "Enviado.");
-          $form.trigger("reset");
-        },
-        error: function (xhr) {
-          var msg = "Erro inesperado.";
-          try { msg = JSON.parse(xhr.responseText).message || msg; } catch (e) {}
-          alert(msg);
-        },
-        complete: function () {
-          $btn.prop("disabled", false);
-        }
-      });
+    // Acrescenta telefone ao corpo da mensagem
+    var phone = fd.get('phone');
+    if (phone) {
+      var msg = fd.get('email_message') || '';
+      if (msg.trim().length) msg += '\n';
+      msg += 'Telefone: ' + phone;
+      fd.set('email_message', msg);
     }
+
+    var $btn = $('#contact-form-submit').prop('disabled', true).addClass('disabled');
+
+    $.ajax({
+      url: 'https://mailtest.tesfire.com/api/mail',
+      method: 'POST',
+      data: fd,
+      processData: false,
+      contentType: false,
+      success: function (res) {
+        alert((res && res.message) ? res.message : 'Mensagem enviada com sucesso.');
+        $form.trigger('reset');
+        // Reinicia o time-trap
+        var tsInput = $form.find('input[name="form_ts"]')[0];
+        if (tsInput) tsInput.value = Math.floor(Date.now() / 1000);
+      },
+      error: function (xhr) {
+        var msg = 'Erro ao enviar.';
+        try { msg = JSON.parse(xhr.responseText).message; } catch (e) { }
+        alert(msg);
+      },
+      complete: function () {
+        $btn.prop('disabled', false).removeClass('disabled');
+      }
+    });
   });
 
   // ===== Banner background carousel + video timing =====
@@ -175,15 +183,13 @@
       var $cur = $(slick.$slides[index]);
       var isVideo = $cur.hasClass("video-slide");
 
-      // Pause Slick internal autoplay; we'll drive it manually
       slick.slickPause();
 
-      // Reset & play videos on the current slide
       $cur.find("video").each(function () {
         try { this.currentTime = 0; this.play && this.play(); } catch (e) {}
       });
 
-      var delay = isVideo ? 12000 : 7000; // 12s for video slides, 7s others
+      var delay = isVideo ? 12000 : 7000;
       timer = setTimeout(function () { slick.slickNext(); }, delay);
     }
 
@@ -191,15 +197,13 @@
       controlAutoplay(slick, slick.currentSlide);
     });
 
-    // Pause/stop videos on the slide we're leaving
-    $slider.on("beforeChange", function (e, slick, cur, next) {
+    $slider.on("beforeChange", function (e, slick, cur) {
       var $leaving = $(slick.$slides[cur]);
       $leaving.find("video").each(function () {
         try { this.pause && this.pause(); } catch (e) {}
       });
     });
 
-    // Start timing on the new slide
     $slider.on("afterChange", function (e, slick, current) {
       controlAutoplay(slick, current);
     });
@@ -207,7 +211,7 @@
     $slider.slick({
       dots: true,
       arrows: false,
-      autoplay: true,     // required, but we’ll immediately pause and manage ourselves
+      autoplay: true,     // start, then we manage timing manually
       autoplaySpeed: 7000,
       speed: 700,
       fade: true,

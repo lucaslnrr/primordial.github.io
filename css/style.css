@@ -440,7 +440,7 @@ a:hover {
     margin-top: 10px
 }
 .img-fluid {
-       max-width: 310px;
+       max-width: 100%;
     height: auto
 }
 .dropdown .dropdown-menu {

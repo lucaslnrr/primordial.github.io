@@ -213,6 +213,14 @@
         <form id="contact-form" class="contact__form" method="post" action="">
           <input name="email_to" value="suporte@pgrmt.com.br" type="hidden" />
 
+          <!-- Honeypot (deve ficar vazio) -->
+          <input type="text" name="website" autocomplete="off" tabindex="-1"
+                 aria-hidden="true"
+                 style="position:absolute;left:-9999px;height:0;width:0;opacity:0">
+
+          <!-- Time-trap -->
+          <input type="hidden" name="form_ts" value="">
+
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
@@ -222,6 +230,7 @@
                   type="text"
                   class="form-control"
                   placeholder="Seu nome completo"
+                  required
                 />
               </div>
             </div>
@@ -234,6 +243,7 @@
                   type="email"
                   class="form-control"
                   placeholder="Seu endereço de e-mail"
+                  required
                 />
               </div>
             </div>
@@ -270,6 +280,7 @@
               class="form-control"
               rows="8"
               placeholder="Digite sua mensagem"
+              required
             ></textarea>
           </div>
 
